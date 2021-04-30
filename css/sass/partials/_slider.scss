@@ -1,0 +1,43 @@
+// This contains the styling for the slider
+
+.slider {
+          @extend %flex;
+          flex-direction: row;
+          -webkit-appearance: none;
+          height: 10px;
+          border-radius: 15px;
+          background: $empty-slider;
+          outline: none;
+          opacity: 0.9;
+          -webkit-transition: 0.2s;
+          transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-runnable-track {
+          -webkit-appearance: none;
+          -slider-filled-track-color: red;
+}
+
+.slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 40px;
+          height: 40px;
+          background: url("../images/icon-slider.svg") no-repeat center;
+          background-color: $slider-bg;
+          border: 1px transparent solid;
+          padding: 15px;
+          border-radius: 50%;
+          cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+          width: 40px;
+          height: 40px;
+          background: url("../images/icon-slider.svg");
+          cursor: pointer;
+          background-color: $slider-bg;
+          border: 1px transparent solid;
+          padding: 15px;
+          border-radius: 50%;
+}

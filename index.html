@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/sass/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./images/pattern-circles.svg" alt="Pattern Circles">
+      <section class="header-section">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required. </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="pageviews">
+        <span class="span-1">100K Pageviews</span>
+        <p>$10.00<span>/ month</span></p>
+      </section>
+
+      <div class="slide-container">
+        <input type="range" min="$5.00" max="$16.00" value="$5.00" class="slider">
+      </div>
+
+
+      <section id="billing">
+        <p>Monthly Billing</p>
+
+        <label class="switch">
+          <input type="checkbox">
+          <span class="toggle round"></span>
+        </label>
+
+        <p>Yearly Billing </p>
+        <span class="discount">25% discount</span>
+      </section>
+
+      <div class="border-line"></div>
+
+      <section id="final-section">
+        <div>
+          <div class="features">
+            <img src="./images/icon-check.svg" alt="Check Icon">
+            <p>Unlimited websites</p>
+          </div>
+
+          <div class="features">
+            <img src="./images/icon-check.svg" alt="Check Icon">
+            <p>100% data ownership</p>
+          </div>
+
+          <div class="features">
+            <img src="./images/icon-check.svg" alt="Check Icon">
+            <p>Email reports</p>
+          </div>
+        </div>
+
+        <button>Start my trial</button>
+      </section>
+    </main>
+  </div>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Adedamola Shittu</a>.
+  </div>
+</body>
+
+</html>

@@ -21,17 +21,21 @@
                     letter-spacing: 1px;
           }
 
+          & div {
+                    display: flex;
+                    gap: 10px;
+          }
+
           p {
                     color: $cta-bg;
-                    font-size: 2.7rem;
+                    font-size: 3rem;
                     font-weight: 800;
           }
 
-          & > p span {
+          & > div > span {
                     color: $text-color;
                     font-size: 1rem;
                     position: relative;
-                    bottom: 10px;
-                    left: 5px;
+                    top: 25px;
           }
 }

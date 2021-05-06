@@ -3,9 +3,9 @@
 #billing {
           display: flex;
           justify-content: flex-end;
-          margin-top: 8%;
+          //   margin-top: 8%;
           gap: 15px;
-          padding-bottom: 30px;
+          padding: 50px 0 40px 0;
 
           p {
                     font-weight: 800;
@@ -14,17 +14,22 @@
           }
 }
 
-.discount {
-          position: relative;
-          bottom: 2px;
-          left: 7px;
+.discount,
+.mobile-discount {
           font-size: 0.8rem;
           font-weight: bolder;
           color: $discount-text;
           background-color: $discount-bg;
-          padding: 5px 7px;
+
           border: none;
           border-radius: 25px;
+}
+.discount {
+          padding: 5px 7px;
+}
+
+.mobile-discount {
+          display: none;
 }
 
 .switch {
@@ -39,6 +44,7 @@
                     width: 0;
                     height: 0;
           }
+          outline: none;
 }
 
 .toggle {

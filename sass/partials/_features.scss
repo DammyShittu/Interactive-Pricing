@@ -8,13 +8,14 @@
 
           button {
                     min-width: 35%;
-                    max-width: 50%;
+                    max-width: 90%;
                     color: $cta-color;
                     background-color: $cta-bg;
                     padding: 10px 40px;
                     border-radius: 50px;
                     font-size: 1rem;
                     cursor: pointer;
+                    border: none;
           }
 
           button:hover {

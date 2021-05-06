@@ -1,10 +1,8 @@
 // It contains the styling for the header section
-.header-section {
-          position: relative;
-          bottom: 40%;
-          left: 0;
-          right: 0;
 
+.header-section {
+          position: absolute;
+          top: 18%;
           h1 {
                     color: $cta-bg;
                     font-size: 2rem;

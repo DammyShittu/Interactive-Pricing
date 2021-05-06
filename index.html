@@ -7,10 +7,11 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/sass/style.css">
+  <link rel="stylesheet" href="./sass/style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
 
 </head>
+
 
 <body>
   <div class="container">
@@ -22,14 +23,20 @@
       </section>
     </header>
 
+
+
     <main>
       <section class="pageviews">
         <span class="span-1">100K Pageviews</span>
-        <p>$10.00<span>/ month</span></p>
+
+        <div>
+          <p>$ <span id="price"></span></p>
+          <span class="month">/ month</span>
+        </div>
       </section>
 
       <div class="slide-container">
-        <input type="range" min="$5.00" max="$16.00" value="$5.00" class="slider">
+        <input type="range" min="0" max="20.00" value="10.00" class="slider" id="sliderRange">
       </div>
 
 
@@ -43,6 +50,7 @@
 
         <p>Yearly Billing </p>
         <span class="discount">25% discount</span>
+        <span class="mobile-discount">-25%</span>
       </section>
 
       <div class="border-line"></div>
@@ -71,12 +79,7 @@
   </div>
 
 
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Adedamola Shittu</a>.
-  </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

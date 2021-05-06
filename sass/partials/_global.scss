@@ -14,17 +14,34 @@ body {
           height: 100%;
           line-height: 1.6;
           font-family: $manrope-font;
+          position: relative;
 }
 
+header {
+          @extend %flex;
+          height: 65vh;
+          text-align: center;
+          background-image: url(../images/bg-pattern.svg);
+          background-size: cover;
+
+          img {
+                    position: absolute;
+                    top: 13%;
+          }
+}
 main {
           width: 40%;
+          height: auto;
           background-color: $pricing-component-bg;
           padding: 35px 0 20px 0;
           border-radius: 15px;
           position: absolute;
-          top: 35%;
-          left: 30%;
-          right: 30%;
+          top: 55%;
+          bottom: auto;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
 
           z-index: 999;
           box-shadow: 9px 10px 27px -3px rgba(171, 166, 166, 0.71);

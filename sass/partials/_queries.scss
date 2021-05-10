@@ -121,8 +121,13 @@
                     }
           }
 
+          .pageviews > span {
+                    font-size: 0.7rem;
+          }
+
           #billing {
                     gap: 6px;
+                    padding-top: 20px;
                     p {
                               font-size: 0.7rem;
                     }
